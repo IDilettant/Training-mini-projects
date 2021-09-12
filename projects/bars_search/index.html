@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_51b6183bea18441589272adc4da781c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_51b6183bea18441589272adc4da781c9" ></div>
+        
+</body>
+<script>    
+    
+            var map_51b6183bea18441589272adc4da781c9 = L.map(
+                "map_51b6183bea18441589272adc4da781c9",
+                {
+                    center: [55.704098, 37.651699],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8244960bda0c4230b3fb16583ac48a8f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var marker_de837519ab744c45a5bb52fea69d8826 = L.marker(
+                [55.704098, 37.651699],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_a3262cf7d3db481481d173ba4ad81643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de837519ab744c45a5bb52fea69d8826.setIcon(icon_a3262cf7d3db481481d173ba4ad81643);
+        
+    
+        var popup_e30c3502df1d4ba4b0928434c39d06c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_316c66e1ce2d4564880770e44af4060f = $(`<div id="html_316c66e1ce2d4564880770e44af4060f" style="width: 100.0%; height: 100.0%;"><b>I'm here</b></div>`)[0];
+            popup_e30c3502df1d4ba4b0928434c39d06c0.setContent(html_316c66e1ce2d4564880770e44af4060f);
+        
+
+        marker_de837519ab744c45a5bb52fea69d8826.bindPopup(popup_e30c3502df1d4ba4b0928434c39d06c0)
+        ;
+
+        
+    
+    
+            var marker_4e145c58a06f44ef9cc34fce71423d3b = L.marker(
+                [55.702809875690235, 37.65169866262419],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_639afdaa513147498352faba779aef82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4e145c58a06f44ef9cc34fce71423d3b.setIcon(icon_639afdaa513147498352faba779aef82);
+        
+    
+        var popup_3ec6f26152cb4abfb5e535181455606f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2f9f6e3c92a49eb91957434e6d0e8cd = $(`<div id="html_b2f9f6e3c92a49eb91957434e6d0e8cd" style="width: 100.0%; height: 100.0%;">БАР В ФИЗК.-ОЗДОР.КОМПЛЕКСЕ</div>`)[0];
+            popup_3ec6f26152cb4abfb5e535181455606f.setContent(html_b2f9f6e3c92a49eb91957434e6d0e8cd);
+        
+
+        marker_4e145c58a06f44ef9cc34fce71423d3b.bindPopup(popup_3ec6f26152cb4abfb5e535181455606f)
+        ;
+
+        
+    
+    
+            marker_4e145c58a06f44ef9cc34fce71423d3b.bindTooltip(
+                `<div>
+                     Drink me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78ce0d29d70a4bf4977d1e899eaad5b1 = L.marker(
+                [55.70696774320766, 37.649136000000006],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_378e642636a940e9b28d53e4eba624cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_78ce0d29d70a4bf4977d1e899eaad5b1.setIcon(icon_378e642636a940e9b28d53e4eba624cb);
+        
+    
+        var popup_de4b0eafbc9c47e09b2bb158969ad82e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbb2ec7fb9114bc6988e647002176a93 = $(`<div id="html_dbb2ec7fb9114bc6988e647002176a93" style="width: 100.0%; height: 100.0%;">Центральная станция</div>`)[0];
+            popup_de4b0eafbc9c47e09b2bb158969ad82e.setContent(html_dbb2ec7fb9114bc6988e647002176a93);
+        
+
+        marker_78ce0d29d70a4bf4977d1e899eaad5b1.bindPopup(popup_de4b0eafbc9c47e09b2bb158969ad82e)
+        ;
+
+        
+    
+    
+            marker_78ce0d29d70a4bf4977d1e899eaad5b1.bindTooltip(
+                `<div>
+                     Drink me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e15308785cf34f9094f156ee1ea74222 = L.marker(
+                [55.70994903547632, 37.65428934409813],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_8afe8a886df74f0eafdeda0132f47b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e15308785cf34f9094f156ee1ea74222.setIcon(icon_8afe8a886df74f0eafdeda0132f47b55);
+        
+    
+        var popup_1874b654e687438eaea29c78125d03e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aba6c8f4a774bf49ba65ead2deeb244 = $(`<div id="html_2aba6c8f4a774bf49ba65ead2deeb244" style="width: 100.0%; height: 100.0%;">Винный базар</div>`)[0];
+            popup_1874b654e687438eaea29c78125d03e4.setContent(html_2aba6c8f4a774bf49ba65ead2deeb244);
+        
+
+        marker_e15308785cf34f9094f156ee1ea74222.bindPopup(popup_1874b654e687438eaea29c78125d03e4)
+        ;
+
+        
+    
+    
+            marker_e15308785cf34f9094f156ee1ea74222.bindTooltip(
+                `<div>
+                     Drink me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35e83d5677c04fdcb629e079a4e25b20 = L.marker(
+                [55.71857290392619, 37.64788504904847],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_b58e0abdd0894a1ca7743393c9d27096 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35e83d5677c04fdcb629e079a4e25b20.setIcon(icon_b58e0abdd0894a1ca7743393c9d27096);
+        
+    
+        var popup_01d577cc9c1e45f199cde313d75d0a33 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa572a83cc6f4b638a42dc947d5c400c = $(`<div id="html_aa572a83cc6f4b638a42dc947d5c400c" style="width: 100.0%; height: 100.0%;">Крафт Бар</div>`)[0];
+            popup_01d577cc9c1e45f199cde313d75d0a33.setContent(html_aa572a83cc6f4b638a42dc947d5c400c);
+        
+
+        marker_35e83d5677c04fdcb629e079a4e25b20.bindPopup(popup_01d577cc9c1e45f199cde313d75d0a33)
+        ;
+
+        
+    
+    
+            marker_35e83d5677c04fdcb629e079a4e25b20.bindTooltip(
+                `<div>
+                     Drink me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c89ef79a36b44fdbbf9b0ca0db09166 = L.marker(
+                [55.7097020170102, 37.62768442167761],
+                {}
+            ).addTo(map_51b6183bea18441589272adc4da781c9);
+        
+    
+            var icon_cf2851481af94b07b5ec8ca50f391f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c89ef79a36b44fdbbf9b0ca0db09166.setIcon(icon_cf2851481af94b07b5ec8ca50f391f2f);
+        
+    
+        var popup_47ed7b49a0174da1bde66387d177cef1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be6fdc77f62f408494967f26176503c9 = $(`<div id="html_be6fdc77f62f408494967f26176503c9" style="width: 100.0%; height: 100.0%;">ГОСТИНИЦА «ДАНИЛОВСКАЯ» БАР</div>`)[0];
+            popup_47ed7b49a0174da1bde66387d177cef1.setContent(html_be6fdc77f62f408494967f26176503c9);
+        
+
+        marker_8c89ef79a36b44fdbbf9b0ca0db09166.bindPopup(popup_47ed7b49a0174da1bde66387d177cef1)
+        ;
+
+        
+    
+    
+            marker_8c89ef79a36b44fdbbf9b0ca0db09166.bindTooltip(
+                `<div>
+                     Drink me
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

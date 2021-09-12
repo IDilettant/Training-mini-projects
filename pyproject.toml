@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "training-mini-projects"
+version = "0.1.0"
+description = ""
+authors = ["idilettant <dedenev.dev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyter = "^1.0.0"
+transliterate = "^1.10.2"
+num2words = "^0.5.10"
+Pillow = "^8.3.2"
+python-telegram-bot = "^13.7"
+pytimeparse = "^1.1.8"
+Faker = "^8.12.1"
+urwid = "^2.1.2"
+Flask = "^2.0.1"
+folium = "^0.12.1"
+geopy = "^2.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
