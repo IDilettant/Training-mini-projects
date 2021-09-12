@@ -47,29 +47,35 @@ letters_mapping = {
     ' ': ' '  
 }
 
-for skill in skills:
-    runic_word = ''
-    for letter in skill:
-        runic_word += letters_mapping[letter]
-    runic_skills.append(runic_word)
 
-for number_of_form in range(first_form, last_form + 1):
-    random_skills = random.sample(runic_skills, total_character_skills)
-    male_name = (fake.first_name_male(), fake.last_name_male())
-    female_name = (fake.first_name_female(), fake.last_name_female())
-    character_first_name, character_last_name = random.choice((male_name, female_name))           
-    context = {
-        'first_name': character_first_name,
-        'last_name': character_last_name,
-        'job': fake.job(),
-        'town': fake.city(),
-        'strength': random.randint(min_level_of_character, max_level_of_character),
-        'agility': random.randint(min_level_of_character, max_level_of_character),
-        'endurance': random.randint(min_level_of_character, max_level_of_character),
-        'intelligence': random.randint(min_level_of_character, max_level_of_character),
-        'luck': random.randint(min_level_of_character, max_level_of_character),
-        'skill_1': random_skills[0],
-        'skill_2': random_skills[1],
-        'skill_3': random_skills[2]
-    }
-    file_operations.render_template(charsheet_path, 'new_charsheets/new_charsheet_{}.svg'.format(number_of_form), context)
+def generate_characters():
+    for skill in skills:
+        runic_word = ''
+        for letter in skill:
+            runic_word += letters_mapping[letter]
+        runic_skills.append(runic_word)
+
+    for number_of_form in range(first_form, last_form + 1):
+        random_skills = random.sample(runic_skills, total_character_skills)
+        male_name = (fake.first_name_male(), fake.last_name_male())
+        female_name = (fake.first_name_female(), fake.last_name_female())
+        character_first_name, character_last_name = random.choice((male_name, female_name))
+        context = {
+            'first_name': character_first_name,
+            'last_name': character_last_name,
+            'job': fake.job(),
+            'town': fake.city(),
+            'strength': random.randint(min_level_of_character, max_level_of_character),
+            'agility': random.randint(min_level_of_character, max_level_of_character),
+            'endurance': random.randint(min_level_of_character, max_level_of_character),
+            'intelligence': random.randint(min_level_of_character, max_level_of_character),
+            'luck': random.randint(min_level_of_character, max_level_of_character),
+            'skill_1': random_skills[0],
+            'skill_2': random_skills[1],
+            'skill_3': random_skills[2]
+        }
+        file_operations.render_template(charsheet_path, 'new_charsheets/new_charsheet_{}.svg'.format(number_of_form), context)
+
+
+if __name__ == '__main__':
+    generate_characters()
