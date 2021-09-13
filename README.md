@@ -1,84 +1,87 @@
 # Training mini-projects
 
-### [Раскрутить планету](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/spin_the_planet/main.py)
+The projects were implemented for educational purposes. The tasks are sourced from [devman.org](https://devman.org) 
+and focused on learning through practical cases
 
-Вывести в терминал строковое представление вращающейся Земли
+### [Spin the planet](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/spin_the_planet/main.py)
 
-- Работа со строками
-- Вывод в терминал
-- Управляющие символы ANSI
+Print a string representation of a rotating Earth to the terminal
 
-#### Библиотеки:
+- Working with strings
+- Output to terminal
+- ANSI control characters
+
+#### Used libraries:
 - [time](https://docs.python.org/3/library/time.html)
 
-### [Подготовка речи](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/speech_preparing/main.py)
+### [Speech preparation](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/speech_preparing/main.py)
 
-Упражнение по автоматическому переводу английского текста в русскую транслитерацию с составлением мини-словаря для числительных
+Exercise on automatic translation of English text into Russian transliteration with compilation of a mini-dictionary for numbers
 
-#### Библиотеки:
+#### Used libraries:
 - [transliterate](https://pypi.org/project/transliterate/)
 - [num2words](https://pypi.org/project/num2words/)
 
-### [Рассылка почты](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/sending_emails/main.py)
+### [Mail sending](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/sending_emails/main.py)
 
-Рассылка писем по шаблону 
-- Протокол SMTP
-- Кодировка UTF-8
-- Скрытые переменные
+Sending emails by template
+- SMTP protocol
+- UTF-8 encoding
+- Hidden variables
 
-#### Библиотеки:
+#### Used libraries:
 - [smtplib](https://docs.python.org/3/library/smtplib.html)
 - [os](https://docs.python.org/3/library/os.html)
 
-### [Обработка изображения](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/avatar_cropping/main.py)
+### [Image processing](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/avatar_cropping/main.py)
 
-Сформировать из исходного изображения аватарку с эффектом размытости и цветных фильтров
-- Работа с канлами RGB 
-- Вёрстка изображения
+Form an avatar from the original image with the effect of blur and color filters
+- Working with RGB channels
+- Image layout
 
-#### Библиотеки:
+#### Used libraries:
 - [Pillow](https://pillow.readthedocs.io/en/stable/)
 
-### [Таймер в Telegram](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/telegram_timer/main.py)
+### [Timer in Telegram](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/telegram_timer/main.py)
 
-Простой таймер с прогрессбаром обратного отсчёта
-- Практика использования самописной библиотеки чат-бота
-- Архитектура функций и модуля
-- Коллбэки 
+Simple timer with countdown progress bar
+- Practice of using a self-written chatbot library
+- Functions and modules architecture
+- Callbacks
 
-#### Библиотеки:
+#### Used libraries:
 - [Python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 - [PyTimeParse](https://pypi.org/project/pytimeparse/)
 
-### [Генерация персонажей](https://github.com/IDilettant/Training-mini-projects/tree/main/projects/fake_people)
+### [Generating charsheets of characters](https://github.com/IDilettant/Training-mini-projects/tree/main/projects/fake_people)
 
-На основе svg-шаблона сгенерировать таблицы персонажей с характеристиками в заданном диапазоне и рандомными именами
-- Чтение и запись файлов
-- Библиотека тестирования
-- Словари и списки
-- Циклы
+Based on the svg template, generate tables of characters with characteristics in a given range and random names
+- Reading and writing files
+- Testing library
+- Dictionaries and lists
+- Cycles
 
-#### Библиотеки:
+#### Used libraries:
 - [Random](https://docs.python.org/3/library/random.html)
 - [Faker](https://faker.readthedocs.io/en/master/)
 
-### [Рейтинг пароля](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/password_strength/main.py)
+### [Password rating](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/password_strength/main.py)
 
-Динамическое определение рейтинга вводимого пароля
+Dynamically determining the rating of the entering password
 
-#### Библиотеки:
+#### Used libraries:
 - [Urwid](https://github.com/urwid/urwid)
 
-### [Поиск бара](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/bars_search/main.py)
+### [Nearest bar search](https://github.com/IDilettant/Training-mini-projects/blob/main/projects/bars_search/main.py)
 
-Поиск пяти ближайших баров в радиусе от заданного адреса в Москве
-- Сетевое приложение и запросы
-- Работа с данными в формате JSON / вложенные структуры
+Search for the five nearest bars within a radius of a given address in Moscow
+- Network application and requests
+- Working with data in JSON format / nested structures
 - Yandex geocoder API
-- Обработка списков
-- Генерация HTML
+- List processing
+- HTML generation
 
-#### Библиотеки:
+#### Used libraries:
 - [GeoPy](https://geopy.readthedocs.io/en/stable/)
 - [Folium](http://python-visualization.github.io/folium/)
 - [Flask](https://flask.palletsprojects.com/en/2.0.x)
